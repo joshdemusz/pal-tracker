@@ -19,8 +19,6 @@ test {
 
 bootRun.environment([
         "WELCOME_MESSAGE": "howdy",
-        "UNIQUE_IDENTIFIER": "pal-tracker-josh-demusz",
-        "DOMAIN": "apps.evans.pal.pivotal.io",
 ])
 
 test.environment([
