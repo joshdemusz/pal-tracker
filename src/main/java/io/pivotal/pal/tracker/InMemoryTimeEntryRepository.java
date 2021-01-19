@@ -1,5 +1,7 @@
 package io.pivotal.pal.tracker;
 
+import org.springframework.http.ResponseEntity;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -52,8 +54,9 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository {
     }
 
     @Override
-    public void delete(long id) {
+    public ResponseEntity<Void> delete(long id) {
         timeEntries.remove(id);
+        return null;
     }
 }
 
